@@ -34,13 +34,16 @@ function checkGridSize(gridSize) {
 
 
 function changeGridColor(gridItem){
-    gridItem.style.backgroundColor=getRandomColor();
+    const gridColor = gridItem.style.backgroundColor;
+    if (gridColor === '') {
+        gridItem.style.backgroundColor=getRandomColor();
+    }
 }
+
 
 
 function changeGridSize(gridSize=16) {
     const findGrid = document.querySelector('#grid-container');
-    console.log(findGrid);
     findGrid.remove();
 
     const mainContainer = document.querySelector('#main-container');
@@ -76,6 +79,7 @@ function main() {
     }))
 }
     
+
 
 
 
