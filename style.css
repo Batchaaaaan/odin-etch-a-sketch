@@ -1,9 +1,15 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #grid-container {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     width: 930px;
-    height: 930px;
+    height:850px;
 }
 
 .grid-column {
@@ -11,13 +17,13 @@
     flex: 1 0 auto; 
 }
 
-#main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .grid-row {
     display: flex;
     flex: 1;
+}
+
+button {
+    margin-bottom: 20px;
 }
