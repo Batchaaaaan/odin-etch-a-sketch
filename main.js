@@ -34,12 +34,14 @@ function checkGridSize(gridSize) {
 
 
 function changeGridColor(gridItem){
-    const gridColor = gridItem.style.backgroundColor;
-    if (gridColor === '') {
-        gridItem.style.backgroundColor=getRandomColor();
+    const gridStyle = gridItem.style;
+    if (gridStyle.backgroundColor === '' ) {
+        gridStyle.backgroundColor = getRandomColor();
+        gridStyle.opacity = '0.1'
+    } else {
+        gridStyle.opacity = parseFloat(gridStyle.opacity) + 0.1;
     }
 }
-
 
 
 function changeGridSize(gridSize=16) {
