@@ -34,7 +34,7 @@ function checkGridSize(gridSize) {
 
 
 function changeGridColor(gridItem){
-    gridItem.style.backgroundColor='lightblue'
+    gridItem.style.backgroundColor=getRandomColor();
 }
 
 
